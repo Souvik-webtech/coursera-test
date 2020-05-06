@@ -5,20 +5,29 @@ h1{
     color: red;
     text-align: center;
 }
-section{
-    width: 28%;
-    padding: 5px;
-    border: 1px solid black;
-    margin: 2px;
-}
 #s1{
-    background-color: salmon;
-    float: right;
+    background-color: cadetblue;
 }
 #s2{
-    background-color: skyblue;
+    background-color: coral;
 }
 #s3{
-    background-color: violet;
-    position: absolute;
+    background-color: plum;
 }
+
+@media (min-width:992px){
+    #column{
+        width: 28%;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 2px;
+        float: left;
+    }
+    .row::after{
+        content:"";
+        display: table;
+        clear:both;
+    }
+
+}
+
